@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Site</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nabla&family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nabla&family=Rye&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="top-container">
+      <img class="right-cloud" src="images/cloud.png" alt="clouds">
+      <h1>Hola! Soy Humphrey</h1>
+      <h2>Ca<span class="rag">loo</span>can Boy</h2>
+      <img class="left-cloud" src="images/cloud.png" alt="clouds">
+      <img src="images/mountain.png" alt="">
+
+    </div>
+
+    <div class="middle-container">
+      <div class="profile">
+        <button class="b1" type="button" onclick="play_Audio() + alert('Poging normal')" >
+          <img class="i1" src="images/me.png" alt="" height="200px" width="200px">
+        </button>
+        <button class="b2" type="button" onclick="pause_Audio() + alert('Pogi pa din pero baliktad')">
+          <img class="i1" src="images/me.png" alt="" height="200px" width="200px">
+        </button>
+        <h2>Hello.</h2>
+        <p>Eh paano kung hindi, hindi ka nakilala. Siguro, nakakulong pa din. Sa nakaraan, 'di makalaya</p>
+      </div>
+      <hr>
+
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="pogi-img" src="images/pogi.png" alt="">
+          <h3>Pogi</h3>
+          <p>Namoblema ako kahapon ang tawag pogi problems. Pumunta akong palengke kaninang umaga, pagkapasok na pagkapasok ko pogi agad ang sigaw nila</p>
+        </div>
+        <div class="skill-row">
+          <img class="shesh" src="images/shesh.png" alt="">
+          <h3>Lip Bite</h3>
+          <p>Wala kase akong skills sadyang gwapo lang talaga. Wala eh itsura lang kaya kong iharap.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Wag ka lumapit sa akin may sakit kase akong pogititis.</h3>
+        <p class="contact-message">Kung kasalanan ang pagiging gwapo, patawarin niyo po ako.</p>
+        <a class="btn" href="http://facebook.com/profile.php?=73322363">POGI SPOTTED</a>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.youtube.com/watch?v=DUmcisXhahQ">Naks</a>
+      <p class="credit">© 2022 Humphrey Tarra.</p>
+    </div>
+
+    <audio id="idAudio"autoplay>
+          <source src="images/nice.mp3" type="audio/mpeg">
+
+    </audio>
+    <script>
+      var GFG = document.getElementById("idAudio");
+      var play = 0;
+      function play_Audio() {
+        play++;
+        GFG.play();
+      }
+      function pause_Audio() {
+        GFG.pause();
+      }
+    </script>
+    <div class="animation">
+    </div>
+  </body>
+</html>
